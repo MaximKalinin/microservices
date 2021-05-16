@@ -2,11 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: path.join(__dirname, 'src', 'index.jsx'),
+    entry: path.join(__dirname, 'dev', 'index.jsx'),
     output: { path: path.join(__dirname, 'dist'), filename: 'index.js' },
     mode: 'development',
-    resolve: { modules: [path.resolve(__dirname, 'src'), 'node_modules'] },
-    devServer: { contentBase: path.join(__dirname, 'src'), open: true },
+    resolve: { extensions: ['.js', '.jsx'] },
+    devServer: { contentBase: path.join(__dirname), open: true },
     module: {
         rules: [
             { 
