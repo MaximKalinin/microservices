@@ -33,9 +33,6 @@ All of the API should be used only inside main application, `app` in our case.
 ### Libraries
 In this case all the apps rely on `react` and `redux`, but they can be easily replaced with `vue`, `mobx` or any other implementation as soon as you provide proper API implementation for the microservice.
 
-### Static rules
-As some microservices might rely on other (via `state_manager` bridge), you need to ensure that required microservices always exist on the page together. One example is placing all the microservices in the root of a route and then making them show with triggering dedicated `state_manager` listeners.
-
 ## Electron
 This structure can be used also in Electron projects with the logic that is triggered through the interface. Simply pay attention to execute code in the correct environment (node or browser).
 
