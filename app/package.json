@@ -8,11 +8,12 @@
     "start": "webpack serve --config webpack.dev.js"
   },
   "dependencies": {
+    "auth": "file:../auth",
+    "ice-cream": "file:../ice-cream",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
-    "redux": "^4.1.0",
-    "ice-cream": "file:../ice-cream"
+    "redux": "^4.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",

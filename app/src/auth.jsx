@@ -1,7 +1,7 @@
 import {useEffect, useRef} from 'react';
-import {mount, unmount} from 'ice-cream';
+import {mount, unmount} from 'auth';
 
-function IceCream({show}) {
+function Auth({show}) {
     const ref = useRef();
 
     useEffect(() => {
@@ -16,4 +16,4 @@ function IceCream({show}) {
     return <div ref={ref} />;
 }
 
-export {IceCream};
+export {Auth};
