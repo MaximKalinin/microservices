@@ -1,4 +1,5 @@
 import {Provider} from 'react-redux';
+import ReactDOM from 'react-dom';
 import {store} from './store';
 import {Picker} from './picker';
 
@@ -10,4 +11,8 @@ function App() {
     );
 }
 
-export {App};
+function mount(element) {
+    ReactDOM.render(<App />, element);
+}
+
+export {mount};

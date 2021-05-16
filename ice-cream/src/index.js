@@ -1,3 +1,3 @@
-import {App} from './root';
+import {mount} from './root';
 
-export {App as IceCream};
+export {mount as ice_cream_mount};
