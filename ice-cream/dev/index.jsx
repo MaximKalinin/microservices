@@ -1,6 +1,3 @@
-import ReactDOM from 'react-dom';
+import {mount} from '../src';
 
-import {IceCream} from '../src';
-
-ReactDOM.render(<IceCream />, document.getElementById('root'));
-
+mount(document.getElementById('root'));

@@ -1,3 +1,8 @@
-import {mount} from './root';
+import {mount, unmount} from './root';
+import {store} from './store';
 
-export {mount as ice_cream_mount};
+function subscribe(listener) {
+    store.subscribe(() => listener(store.getState()))
+}
+
+export {mount, unmount, subscribe};

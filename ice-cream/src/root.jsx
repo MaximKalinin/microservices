@@ -15,4 +15,8 @@ function mount(element) {
     ReactDOM.render(<App />, element);
 }
 
-export {mount};
+function unmount(element) {
+    ReactDOM.unmountComponentAtNode(element);
+}
+
+export {mount, unmount};
